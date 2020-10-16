@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menuContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="8dp">
+        <TextView
+            android:id="@+id/txtSerialNum"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="id"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:padding="8dp" />
+        <TextView
+            android:id="@+id/txtFoodItem"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtSerialNum"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Food Item"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:id="@+id/txtFoodPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtSerialNum"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="8dp"
+            android:text="Food Price"
+            android:layout_below="@id/txtFoodItem"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/add"
+            android:textAllCaps="false"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/Yellow"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp" />
+        <Button
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/remove"
+            android:textAllCaps="false"
+            android:background="@color/Yellow"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:visibility="gone"/>
+
+
+</RelativeLayout>

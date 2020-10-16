@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_color"
+    tools:context=".fragment.MenuFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+    <TextView
+        android:id="@+id/txtInst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/choose_from_menu_listed_below"
+        android:textColor="@color/white"
+        android:layout_below="@+id/toolBar"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtInst"
+        android:layout_margin="4dp"
+        android:background="@color/black" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/butAddToCart"
+        android:layout_below="@+id/view"
+        android:layout_margin="10dp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/butAddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="@string/add_to_cart"
+        android:textAlignment="center"
+        android:textColor="@color/Yellow"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

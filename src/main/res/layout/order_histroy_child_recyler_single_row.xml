@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/txtFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Name"
+        android:textColor="#fff"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txtFoodPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Rs.100"
+        android:textColor="#fff"
+        android:textSize="17sp" />
+</RelativeLayout>

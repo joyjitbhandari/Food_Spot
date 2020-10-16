@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:background="@drawable/page_color">
+    <RelativeLayout
+        android:id="@+id/headerContent"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/imgProfilePhoto"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:padding="8dp"
+            android:src="@drawable/no_profile_pic" />
+        <TextView
+            android:id="@+id/txtProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgProfilePhoto"
+            android:text="Profile Name"
+            android:textSize="20sp"
+            android:textColor="@color/Yellow"
+            android:layout_margin="5dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtProfileName"
+            android:text="Mobile Number"
+            android:textSize="18sp"
+            android:textColor="@color/Yellow"
+            android:layout_margin="5dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>
